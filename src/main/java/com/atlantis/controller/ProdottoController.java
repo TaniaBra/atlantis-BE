@@ -64,6 +64,7 @@ public class ProdottoController {
 	}
 
 	@DeleteMapping(value = "prodotti/delete")
+	@CrossOrigin
 	@ResponseBody
 	public void deleteProdottoById(@RequestParam String id) {
 		try {
@@ -77,6 +78,7 @@ public class ProdottoController {
 	}
 
 	@PutMapping(value = "prodotti/update")
+	@CrossOrigin
 	@ResponseBody
 	public void updateProdottoById(@RequestBody Prodotto prodotto) {
 
@@ -91,6 +93,7 @@ public class ProdottoController {
 	}
 	
 	@PostMapping(value = "prodotti/insert")
+	@CrossOrigin
 	@ResponseBody
 	public Prodotto insertProdotto(@RequestBody Prodotto prodotto) {
 		
