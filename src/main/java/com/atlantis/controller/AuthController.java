@@ -39,6 +39,7 @@ public class AuthController {
 	}
 
 	@PutMapping(value = "utenti/delete")
+	@CrossOrigin
 	@ResponseBody
 	public void deleteUtenteById(@RequestParam String id) {
 		try {
@@ -52,6 +53,7 @@ public class AuthController {
 	}
 
 	@PutMapping(value = "utenti/riactivated")
+	@CrossOrigin
 	@ResponseBody
 	public void riactivatedUtenteById(@RequestParam String id) {
 		try {
@@ -62,6 +64,7 @@ public class AuthController {
 	}
 
 	@PostMapping(value = "utenti/registrazione")
+	@CrossOrigin
 	@ResponseBody
 	public Utente registraUtente(@RequestBody Utente utente) {
 
@@ -76,6 +79,7 @@ public class AuthController {
 	}
 
 	@PutMapping(value = "utenti/update")
+	@CrossOrigin
 	@ResponseBody
 	public void updateUtenteById(@RequestBody Utente utente) {
 
